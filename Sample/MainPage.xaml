@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemColorsSample.MainPage" Title="SystemColors">
+
+    <ScrollView>
+        <!--<VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.Row="0"
+                     Grid.Column="0" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemRed}, iOS={DynamicResource Ios_SystemRed}}"/>
+            <BoxView Grid.Row="0"
+                     Grid.Column="1" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemOrange}, iOS={DynamicResource Ios_SystemOrange}}"/>
+            <BoxView Grid.Row="0"
+                     Grid.Column="2" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemYellow}, iOS={DynamicResource Ios_SystemYellow}}"/>
+            <BoxView Grid.Row="0"
+                     Grid.Column="3" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGreen}, iOS={DynamicResource Ios_SystemGreen}}"/>
+
+
+            <BoxView Grid.Row="1"
+                     Grid.Column="0" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemMint}, iOS={DynamicResource Ios_SystemMint}}"/>
+            <BoxView Grid.Row="1"
+                     Grid.Column="1" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemTeal}, iOS={DynamicResource Ios_SystemTeal}}"/>
+            <BoxView Grid.Row="1"
+                     Grid.Column="2" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemCyan}, iOS={DynamicResource Ios_SystemCyan}}"/>
+            <BoxView Grid.Row="1"
+                     Grid.Column="3" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemBlue}, iOS={DynamicResource Ios_SystemBlue}}"/>
+
+            <BoxView Grid.Row="2"
+                     Grid.Column="0" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemIndigo}, iOS={DynamicResource Ios_SystemIndigo}}"/>
+            <BoxView Grid.Row="2"
+                     Grid.Column="1" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemPurple}, iOS={DynamicResource Ios_SystemPurple}}"/>
+            <BoxView Grid.Row="2"
+                     Grid.Column="2" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemPink}, iOS={DynamicResource Ios_SystemPink}}"/>
+            <BoxView Grid.Row="2"
+                     Grid.Column="3" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemBrown}, iOS={DynamicResource Ios_SystemBrown}}"/>
+
+
+
+             <BoxView Grid.Row="3"
+                     Grid.Column="0" Margin="4,8,4,4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGray}, iOS={DynamicResource Ios_SystemGray}}"/>
+            <BoxView Grid.Row="3"
+                     Grid.Column="1" Margin="4,8,4,4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGray2}, iOS={DynamicResource Ios_SystemGray2}}"/>
+            <BoxView Grid.Row="3"
+                     Grid.Column="2" Margin="4,8,4,4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGray3}, iOS={DynamicResource Ios_SystemGray3}}"/>
+            <BoxView Grid.Row="4"
+                     Grid.Column="0" Margin="4,4,4,8"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGray4}, iOS={DynamicResource Ios_SystemGray4}}"/>
+            <BoxView Grid.Row="4"
+                     Grid.Column="1" Margin="4,4,4,8"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGray5}, iOS={DynamicResource Ios_SystemGray5}}"/>
+            <BoxView Grid.Row="4"
+                     Grid.Column="2" Margin="4,4,4,8"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGray6}, iOS={DynamicResource Ios_SystemGray6}}"/>
+
+
+            <BoxView Grid.Row="5"
+                     Grid.Column="0" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemLabel}, iOS={DynamicResource Ios_SystemLabel}}"/>
+            <BoxView Grid.Row="5"
+                     Grid.Column="1" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SecondaryLabel}, iOS={DynamicResource Ios_SecondaryLabel}}"/>
+            <BoxView Grid.Row="5"
+                     Grid.Column="2" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_TertiaryLabel}, iOS={DynamicResource TertiaryLabel}}"/>
+            <BoxView Grid.Row="5"
+                     Grid.Column="3" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_QuaternaryLabel}, iOS={DynamicResource Ios_QuaternaryLabel}}"/>
+
+
+            <BoxView Grid.Row="6"
+                     Grid.Column="0" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_Placeholder}, iOS={DynamicResource Ios_Placeholder}}"/>
+            <BoxView Grid.Row="6"
+                     Grid.Column="1" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_Separator}, iOS={DynamicResource Ios_Separator}}"/>
+            <BoxView Grid.Row="6"
+                     Grid.Column="2" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_OpaqueSeparator}, iOS={DynamicResource Ios_OpaqueSeparator}}"/>
+            <BoxView Grid.Row="6"
+                     Grid.Column="3" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_LinkColor}, iOS={DynamicResource Ios_LinkColor}}"/>
+
+            <BoxView Grid.Row="7"
+                     Grid.Column="0" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_FillColor}, iOS={DynamicResource Ios_FillColor}}"/>
+            <BoxView Grid.Row="7"
+                     Grid.Column="1" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SecondaryFillColor}, iOS={DynamicResource Ios_SecondaryFillColor}}"/>
+            <BoxView Grid.Row="7"
+                     Grid.Column="2" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_TertiaryFillColor}, iOS={DynamicResource Ios_TertiaryFillColor}}"/>
+            <BoxView Grid.Row="7"
+                     Grid.Column="3" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_QuaternaryFillColor}, iOS={DynamicResource Ios_QuaternaryFillColor}}"/>
+
+            <BoxView Grid.Row="8"
+                     Grid.Column="0" Margin="4,8,4,4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemBackgroundColor}, iOS={DynamicResource Ios_SystemBackgroundColor}}"/>
+            <BoxView Grid.Row="8"
+                     Grid.Column="1" Margin="4,8,4,4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SecondarySystemBackgroundColor}, iOS={DynamicResource Ios_SecondarySystemBackgroundColor}}"/>
+            <BoxView Grid.Row="8"
+                     Grid.Column="2" Margin="4,8,4,4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_TertiarySystemBackgroundColor}, iOS={DynamicResource Ios_TertiarySystemBackgroundColor}}"/>
+            <BoxView Grid.Row="9"
+                     Grid.Column="0" Margin="4,4,4,8"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SystemGroupedBackgroundColor}, iOS={DynamicResource Ios_SystemGroupedBackgroundColor}}"/>
+            <BoxView Grid.Row="9"
+                     Grid.Column="1" Margin="4,4,4,8"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_SecondarySystemGroupedBackgroundColor}, iOS={DynamicResource Ios_SecondarySystemGroupedBackgroundColor}}"/>
+            <BoxView Grid.Row="9"
+                     Grid.Column="2" Margin="4,4,4,8"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_TertiarySystemGroupedBackgroundColor}, iOS={DynamicResource Ios_TertiarySystemGroupedBackgroundColor}}"/>
+
+
+            <BoxView Grid.Row="10"
+                     Grid.Column="0" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_DarkTextColor}, iOS={DynamicResource Ios_DarkTextColor}}"/>
+            <BoxView Grid.Row="10"
+                     Grid.Column="1" Margin="4"
+                     Color="{OnPlatform MacCatalyst={DynamicResource Ios_LightTextColor}, iOS={DynamicResource Ios_LightTextColor}}"/>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
+
